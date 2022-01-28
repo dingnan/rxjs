@@ -39,6 +39,11 @@ export class DeansHutComponent implements OnInit {
       }));
   }
 
+  /**
+   * place order
+   * @param {string} type order type
+   * @param {string} amount orders count
+   */
   placeOrder(type: string, amount: string) {
     const count = +amount;
     if (count > 0) {
